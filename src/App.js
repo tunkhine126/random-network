@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Landing from './components/landing/index';
+import NetworkButton from './components/button/index';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="background">
+      <Landing />
+      <NetworkButton />
     </div>
   );
 }
